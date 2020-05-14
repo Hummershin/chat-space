@@ -67,6 +67,7 @@ Things you may want to cover:
 |image|string||
 
 
+
 ### Association
 - belongs_to :group
 - belongs_to :user
