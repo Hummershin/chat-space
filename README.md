@@ -26,23 +26,24 @@ Things you may want to cover:
 ##　usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|e-mail|string|null: false|
+|email|string|null: false|
 |password|string|null: false|
 |nickname|string|null: false|
 
 ## Asociation
-- has_many:groupes_users
-- has_many:groupes, through: groupes_users
+- has_many:groups_users
+- has_many:groups, through: groups_users
 - has_many:comments
 
-##　groupesテーブル
+##　groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false|
+|name|string|null: false|
 
 ## Asociation
-- has_many:groupes_users
-- has_many:users, through: groupes_users
+- has_many:groups_users
+- has_many:users, through: groups_users
 - has_many:comments
 
 ## groups_usersテーブル
@@ -62,6 +63,9 @@ Things you may want to cover:
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
+|text|stirng||
+|image|string||
+
 
 ### Association
 - belongs_to :group
