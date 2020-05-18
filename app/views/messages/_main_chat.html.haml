@@ -1,0 +1,37 @@
+.Main
+  .Main__group-info
+    .Main__group-info--group-name
+      .Main__group-info--group-name--name
+        test
+      .Main__group-info--group-name--member
+        Member:masa
+    .Main__group-info--edit
+      = link_to '#',class: "Group-Info_Edit" do
+        Edit
+
+  .Main__message-list
+    .Main__message-list--message
+      .Main__message-list--message--info
+        .Main__message-list--message--info--user
+          masa
+        .Main__message-list--message--info--date
+          2019/11/20(Wed) 17:43:01
+      .Main__message-list--message--text
+        おはよう！
+    .Main__message-list--message-second
+      .Main__message-list--message-second--info
+        .Main__message-list--message--info--user
+          masa
+        .Main__message-list--message--info--date
+          2019/11/20(Wed) 17:43:43
+      .Main__message-list--message--text
+        今日は夜から雨！
+
+  .Main__message-form
+    %form.message-form
+      .message-form__inputbox
+        %input.message-form__input{type: 'text' ,placeholder: 'type a message'}
+        %label.message-form__label
+          = icon('fas', 'image')
+          %input.None{type: "file"}
+      %input.message-form__submit{type: 'submit', value: 'Send'}
