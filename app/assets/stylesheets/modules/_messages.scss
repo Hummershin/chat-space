@@ -35,6 +35,10 @@
             }
         }
     }
+    a, a:visited{
+      color: #ffffff; 
+      text-decoration: none;
+    }
 
   }
   &__group-list{
@@ -89,6 +93,10 @@
       color: #38AEF0;
       text-decoration: none;
       margin-top: 28px;
+    }
+    a, a:visited{
+      color: #38AEF0; 
+      text-decoration: none;
     }
   }
   &__message-list{
