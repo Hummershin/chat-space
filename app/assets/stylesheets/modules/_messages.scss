@@ -126,31 +126,14 @@
         padding: 12px 0 0 0;
       }
     }
-    &--message-second{
-      padding: 35px 0 11px 0;
-      &--info{
-        display: flex;
-        &--user{
-          font-size: 16px;
-          color: #333333;
-        }
-        &--date{
-          font-size: 12px;
-          color: #999999;
-        }
-      }
-      &--text{
-        font-size: 14px;
-        color: #434A54;
-        padding: 12px 0 0 0;
-      }
-    }
   }
   &__message-form{
     background-color: #d2d2d2;
     height: 90px;
   }
 }
+
+
 .message-form{
   padding: 20px 50px 20px 40px;
   width: 100%;
@@ -161,7 +144,7 @@
     width: 100%;
     position: relative;
   }
-  &__input{
+  &__inputContent{
     height: 50px;
     width: 100%;
     padding: 0 45px 0 15px;
