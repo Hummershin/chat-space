@@ -45,6 +45,7 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 0 20px;
+    overflow: scroll;
     &--group{
       color: #ffffff;
       padding: 20px 0 40px;
@@ -107,6 +108,7 @@
     background-color: #fafafa;
     height: calc(100vh - 191px);
     padding: 0 0 0 40px;
+    overflow: scroll;
     &--message{
       padding: 35px 0 11px 0;
       &--info{
