@@ -1,8 +1,10 @@
 $(function(){
+  console.log(last_message_id)
+
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="Main__message-list--message">
+        `<div class="Main__message-list--message" data-message-id=${message.id}>
           <div class="Main__message-list--message--info">
             <div class="Main__message-list--message--info--user">
               ${message.user_name}
@@ -21,7 +23,7 @@ $(function(){
       return html;
     } else {
       let html =
-      `<div class="Main__message-list--message">
+      `<div class="Main__message-list--message" data-message-id=${message.id}>
         <div class="Main__message-list--message--info">
           <div class="Main__message-list--message--info--user">
             ${message.user_name}
@@ -44,6 +46,8 @@ $(function(){
     e.preventDefault();
     let formData = new FormData(this);
     let url = $(this).attr('action');
+    let last_message_id = $('Main__message-list--message:last').data("message-id");
+
     $.ajax({
       url: url,
       type: "POST",

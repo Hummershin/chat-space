@@ -5,7 +5,8 @@
         = @group.name
       .Main__group-info--group-name--member
         Member :
-        = @member.user.name
+        - @group.users.each do |member|
+          = member.name
         さん
 
     .Main__group-info--edit
